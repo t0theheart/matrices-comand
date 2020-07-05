@@ -10,8 +10,6 @@ This program can do some operations with matrices also the program can undo
 completed operations.
 
 ### Class schema:
-**program_1.py** reads matrices from file and writes sum to another file.
-
 ![](class_schema/matrices-command.png)
 
 ### Command
