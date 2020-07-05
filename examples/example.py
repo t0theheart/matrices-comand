@@ -29,7 +29,7 @@ print(receiver.get_result())  # {'multiply': [[11, -22, 29], [9, -27, 32], [13, 
 
 transport_command = TransportCommand(receiver)
 invoker.execute(transport_command)
-print(receiver.get_result())  # {'transport': [[[11, 9, 13], [-22, -27, -17], [29, 32, 26]]]}
+print(receiver.get_result())  # {'transport': [[11, 9, 13], [-22, -27, -17], [29, 32, 26]]}
 
 
 write_command = WriteCommand(receiver, write_to='result_1.json')

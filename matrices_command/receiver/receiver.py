@@ -37,4 +37,4 @@ class Receiver(ReceiverABC):
         self._result = {'multiply': multiply_matrices(matrix_1, matrix_2)}
 
     def transport(self):
-        self._result = {'transport': [get_verticals_from_matrix(m) for m in self._result.values()]}
+        self._result = {'transport': get_verticals_from_matrix(list(self._result.values())[0])}
