@@ -6,6 +6,9 @@ class ReceiverABC(ABC):
     def get_result(self): pass
 
     @abstractmethod
+    def set_result(self, result: dict): pass
+
+    @abstractmethod
     def read(self, read_from: str): pass
 
     @abstractmethod

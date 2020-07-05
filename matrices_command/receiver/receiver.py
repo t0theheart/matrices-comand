@@ -10,6 +10,9 @@ class Receiver(ReceiverABC):
     def get_result(self):
         return self._result
 
+    def set_result(self, result: dict):
+        self._result = result
+
     def read(self, read_from: str):
         with open(read_from, 'r') as f:
             self._result = json.load(f)
